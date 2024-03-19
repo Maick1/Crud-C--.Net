@@ -1,0 +1,77 @@
+﻿@page "/adduser"
+@using System.ComponentModel.DataAnnotations
+@using CrudDefinitivo.Context
+@using CrudDefinitivo.Interface
+@using CrudDefinitivo.Models
+@using MudBlazor
+
+<h3>Agregar Usuarios</h3>
+
+@inject InterfaceUsuario terfaceUsuario
+@inject NavigationManager navigationManager
+
+<EditForm Model="@usuario" OnValidSubmit="SaveUsuario" FormName="form1">
+    <DataAnnotationsValidator />
+    <MudGrid>
+        <MudItem xs="12" sm="7">
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Ingrese los Nombres" Class="mt-3"
+                                  @bind-Value="@usuario.Name" For="@(() => usuario.Name)" InputType="InputType.Text" />
+
+                    <br />
+                    <MudTextField Label="Ingrese la Edad" Class="mt-3"
+                                  @bind-Value="@usuario.Edad" For="@(() => usuario.Edad)" InputType="InputType.Number" />
+
+                    <MudTextField Label="Ingrese el Email" Class="mt-3"
+                                  @bind-Value="@usuario.Email" For="@(() => usuario.Email)" InputType="InputType.Text" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="ml-auto" href="/listausers">Cancelar</MudButton>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Guardar</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="5">
+            <MudPaper Class="pa-4 mud-height-full">
+                <MudText Typo="Typo.subtitle2">Resumen de validación</MudText>
+                @if (success)
+                {
+                    <MudText Color="Color.Success">Exito</MudText>
+                }
+                else
+                {
+                    <MudText Color="@Color.Error">
+                        <ValidationSummary />
+                    </MudText>
+                }
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12">
+            <MudText Typo="Typo.body2" Align="Align.Center">
+                Complete el formulario correctamente para ver el mensaje de éxito.
+            </MudText>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@code {
+
+    private Usuario usuario = new Usuario();
+    bool success;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    // Método para agregar
+    protected async Task SaveUsuario()
+    {
+        await terfaceUsuario.SaveUsuario(usuario);
+        success = true;
+        // Redirigir a /listausers después de 2 segundos
+        await Task.Delay(2000);
+        navigationManager.NavigateTo("/listausers");
+    }
+}

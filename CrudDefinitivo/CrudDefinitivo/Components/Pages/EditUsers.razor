@@ -1,0 +1,56 @@
+﻿@page "/editusers/{Id:int}"
+
+@using CrudDefinitivo.Interface
+@using CrudDefinitivo.Models
+@using MudBlazor
+@inject InterfaceUsuario terfaceUsuario
+@inject NavigationManager NavigationManager
+
+<h3>Editar Usuario</h3>
+<br/>
+<br/>
+<MudContainer>
+    <MudForm Model="UsuarioSeleccionado">
+        <MudTextField @bind-Value="UsuarioSeleccionado.Name" Label="Nombre" />
+        <MudTextField @bind-Value="UsuarioSeleccionado.Edad" Label="Edad" />
+        <MudTextField @bind-Value="UsuarioSeleccionado.Email" Label="E-mail" />
+        <br/>
+        <br/>
+        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="ml-auto" href="/listausers">Cancelar</MudButton>
+
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@GuardarCambios">Guardar</MudButton>
+    </MudForm>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public Usuario UsuarioSeleccionado { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadUsuario(Id);
+    }
+
+    private async Task LoadUsuario(int id)
+    {
+        try
+        {
+            UsuarioSeleccionado = await terfaceUsuario.GetUsuarioById(id);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al cargar el usuario: {e.Message}");
+        }
+    }
+
+    private async Task GuardarCambios()
+    {
+        if (UsuarioSeleccionado != null)
+        {
+            await terfaceUsuario.UpdateUsuario(UsuarioSeleccionado);
+            NavigationManager.NavigateTo("/listausers");
+        }
+    }
+}

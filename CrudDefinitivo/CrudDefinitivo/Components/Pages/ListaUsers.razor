@@ -1,0 +1,154 @@
+﻿@page "/listausers"
+@using CrudDefinitivo.Interface
+@using CrudDefinitivo.Models
+@using MudBlazor
+@inject NavigationManager NavigationManager
+@inject InterfaceUsuario terfaceUsuario
+
+<MudContainer>
+    <br />
+    <br />
+
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" href="/adduser">Agregar Usuario</MudButton>
+    <br />
+    <br />
+    <h1><center>Lista de Usuarios</center></h1>
+    <br />
+
+    <MudTextField @bind-Value="Busqueda" Label="Buscar por nombre" Variant="Variant.Filled" Color="Color.Primary" />
+    <br />
+   
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@BuscarUsuarios">Buscar</MudButton>
+    <br />
+
+    @if (Usuarios == null || !Usuarios.Any())
+    {
+        <br />
+        <MudAlert Severity="Severity.Info" Variant="Variant.Filled">
+            No se encontraron usuarios.
+        </MudAlert>
+    }
+    else
+    {
+        <br /> <br />
+        <MudTable Items="@Usuarios" Spacing="Spacing.Both">
+            <HeaderContent>
+                <MudTr>
+                    <MudTh>
+                        <div style="padding-right: 30px;">ID</div>
+                    </MudTh>
+                    <MudTh>
+                        <div style="padding-right: 30px;">Nombre</div>
+                    </MudTh>
+                    <MudTh>
+                        <div style="padding-right: 30px;">Edad</div>
+                    </MudTh>
+                    <MudTh>
+                        <div style="padding-right: 30px;">E-mail</div>
+                    </MudTh>
+                    <MudTh>
+                        <div style="margin-right: 30px;">Acciones</div>
+                    </MudTh>
+                </MudTr>
+
+            </HeaderContent>
+            <RowTemplate>
+                <MudTr>
+                    <MudTd>
+                        <div style="padding-right: 30px;">@context.Id</div>
+                    </MudTd>
+                    <MudTd>
+                        <div style="padding-right: 30px;">@context.Name</div>
+                    </MudTd>
+                    <MudTd>
+                        <div style="padding-right: 30px;">@context.Edad</div>
+                    </MudTd>
+                    <MudTd>
+                        <div style="padding-right: 30px;">@context.Email</div>
+                    </MudTd>
+                    <MudTd>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="@( () => EditarUsuario(context.Id) )">Editar</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="@(() => EliminarUsuario(context.Id))">Eliminar</MudButton>
+                    </MudTd>
+                </MudTr>
+            </RowTemplate>
+        </MudTable>
+    }
+
+    @if (UsuarioSeleccionado != null)
+    {
+        <h3>Editar Usuario</h3>
+        <MudForm Model="UsuarioSeleccionado">
+            <MudTextField @bind-Value="UsuarioSeleccionado.Name" Label="Nombre" />
+            <MudTextField @bind-Value="UsuarioSeleccionado.Edad" Label="Edad" />
+            <MudTextField @bind-Value="UsuarioSeleccionado.Email" Label="E-mail" />
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@GuardarCambios">Guardar</MudButton>
+        </MudForm>
+    }
+</MudContainer>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    public IEnumerable<Usuario> Usuarios { get; set; }
+    public Usuario UsuarioSeleccionado { get; set; }
+    public string Busqueda { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ActualizarUsuarios();
+    }
+
+    private async Task ActualizarUsuarios()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(Busqueda))
+            {
+                Usuarios = await terfaceUsuario.GetAllUsuarios();
+            }
+            else
+            {
+                Usuarios = await terfaceUsuario.BuscarUsuariosPorNombre(Busqueda);
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al actualizar usuarios: {e.Message}");
+        }
+    }
+
+    private void EditarUsuario(int usuarioId)
+    {
+        NavigationManager.NavigateTo($"/editusers/{usuarioId}");
+    }
+
+    private async Task GuardarCambios()
+    {
+        if (UsuarioSeleccionado != null)
+        {
+            await terfaceUsuario.UpdateUsuario(UsuarioSeleccionado);
+            UsuarioSeleccionado = null; // Limpiar el usuario seleccionado después de guardar los cambios
+            await ActualizarUsuarios();
+        }
+    }
+
+    private async Task EliminarUsuario(int usuarioId)
+    {
+        bool deleted = await terfaceUsuario.DeleteUsuarioById(usuarioId);
+        if (deleted)
+        {
+            await ActualizarUsuarios();
+        }
+        else
+        {
+            Console.WriteLine("Error al eliminar el usuario.");
+        }
+    }
+
+    private async Task BuscarUsuarios()
+    {
+        await ActualizarUsuarios();
+    }
+}

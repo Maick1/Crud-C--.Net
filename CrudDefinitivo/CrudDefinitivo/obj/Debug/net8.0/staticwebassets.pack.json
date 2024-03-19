@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CrudDefinitivo.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CrudDefinitivo.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CrudDefinitivo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CrudDefinitivo.props",
+      "PackagePath": "build\\CrudDefinitivo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CrudDefinitivo.props",
+      "PackagePath": "buildMultiTargeting\\CrudDefinitivo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CrudDefinitivo.props",
+      "PackagePath": "buildTransitive\\CrudDefinitivo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

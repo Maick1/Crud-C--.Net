@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\components\\pages\\listausers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:components\\pages\\listausers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\interface\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:interface\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\context\\myusuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:context\\myusuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|c:\\users\\users-pc\\desktop\\cruddefinitivo\\cruddefinitivo\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F67BA-5974-4068-81EE-57132B2F2F6C}|CrudDefinitivo.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListaUsers.razor",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\Pages\\ListaUsers.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\ListaUsers.razor",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\Pages\\ListaUsers.razor",
+              "RelativeToolTip": "Components\\Pages\\ListaUsers.razor",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAUwHgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T22:16:51.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyUsuarioContext.cs",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Context\\MyUsuarioContext.cs",
+              "RelativeDocumentMoniker": "Context\\MyUsuarioContext.cs",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Context\\MyUsuarioContext.cs",
+              "RelativeToolTip": "Context\\MyUsuarioContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T21:47:32.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T22:03:37.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T22:02:36.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InterfaceUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Interface\\InterfaceUsuario.cs",
+              "RelativeDocumentMoniker": "Interface\\InterfaceUsuario.cs",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Interface\\InterfaceUsuario.cs",
+              "RelativeToolTip": "Interface\\InterfaceUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T22:00:00.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T22:20:03.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T22:20:41.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T22:01:50.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Users-Pc\\Desktop\\CrudDefinitivo\\CrudDefinitivo\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T21:46:38.852Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
